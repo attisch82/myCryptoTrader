@@ -1,2 +1,1 @@
-# myCryptoTradeApp# myCryptoTrader
-# myCryptoTrader
+# myCryptoTrade
