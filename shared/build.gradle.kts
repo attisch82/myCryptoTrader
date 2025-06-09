@@ -63,6 +63,9 @@ kotlin {
 
                 //sqlDelight
                 implementation(libs.runtime)
+
+                //dotenv
+                implementation(libs.java.dotenv)
             }
         }
 
