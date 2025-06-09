@@ -53,7 +53,10 @@ kotlin {
                 implementation(libs.kotlinx.serialization.json)
 
                 // Koin core
-                implementation(libs.koin.core)
+                api(libs.koin.core)
+                implementation(libs.koin.compose)
+                implementation(libs.koin.compose.viewmodel)
+                implementation(libs.koin.compose.viewmodel.navigation)
 
                 // Kotlinx DateTime
                 implementation(libs.kotlinx.datetime)
@@ -90,12 +93,8 @@ kotlin {
             dependencies {
                 implementation(libs.ktor.client.cio)
                 implementation(libs.androidx.biometric)
-
                 implementation(libs.koin.android)
                 implementation(libs.koin.androidx.compose)
-                implementation(libs.koin.compose.viewmodel)
-                implementation(libs.koin.compose.viewmodel.navigation)
-                implementation(libs.koin.compose)
                 implementation(libs.android.driver)
             }
         }
