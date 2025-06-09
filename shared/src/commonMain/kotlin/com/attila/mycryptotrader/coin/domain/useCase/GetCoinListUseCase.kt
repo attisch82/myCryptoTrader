@@ -11,7 +11,7 @@ class GetCoinListUseCase(
     private val source: CoinRemoteDataSource
 ) {
     suspend operator fun invoke() : Result<List<CoinModel>, DataError.Remote> =
-        source.getCoinList().map {
-            it.data.data.map { it.toCoinModel() }
+        source.getCoinList().map { dto ->
+            dto.data.data.map { it.toCoinModel() }
         }
 }

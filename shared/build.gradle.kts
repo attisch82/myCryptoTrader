@@ -66,6 +66,10 @@ kotlin {
 
                 //dotenv
                 implementation(libs.java.dotenv)
+
+                //viewModel
+                implementation(libs.androidx.lifecycle.viewmodel)
+                implementation(libs.androidx.lifecycle.runtime.compose)
             }
         }
 
