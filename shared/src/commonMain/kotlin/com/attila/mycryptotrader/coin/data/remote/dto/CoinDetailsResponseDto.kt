@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class CoinDetailsDto(
-    val data: CoinPriceDto
+    val data: CoinItemDto
 )
 
 @Serializable
